@@ -1,9 +1,4 @@
-.checkbox {
-    display: none;
-    position: absolute;
-}
-
-.label {
+.dark__toggle {
     background-color: var(--grey-100);
     border-radius: 50px;
     cursor: pointer;
@@ -18,7 +13,7 @@
 }
 
 
-.label .ball {
+.dark__toggle .ball {
     background-color: var(--grey-0-bg);
     border-radius: 50%;
     position: absolute;

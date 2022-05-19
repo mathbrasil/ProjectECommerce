@@ -32,10 +32,10 @@ function autoListAll() {
 autoListAll()
 
 //LISTENER PARA DARK MODE
-const chk = document.querySelector('.label')
+const darkToggle = document.querySelector('.dark__toggle')
 const html = document.querySelector('html')
 
-chk.addEventListener('click', function (event) {
+darkToggle.addEventListener('click', function (event) {
     html.classList.toggle('dark--mode')
 })
 
@@ -93,11 +93,12 @@ const button = document.querySelector('button')
 //FUNÇÃO PARA BUSCAR click
 input.addEventListener('change', function (event) {
     showcase.innerHTML = ""
+    const inputL = input.value.toLocaleLowerCase()
     for (let i = 0; i < data.length; i++) {
-        if (data[i].nameItem.includes(input.value) 
-        || data[i].tag.includes(input.value) 
-        || data[i].description.includes(input.value) 
-        || data[i].value == Number(input.value)) {
+        if (data[i].nameItem.toLowerCase().includes(inputL) 
+        || data[i].tag.toLowerCase().includes(inputL) 
+        || data[i].description.toLowerCase().includes(inputL) 
+        || data[i].value == Number(inputL)) {
             createCard(i)
         }
     }
