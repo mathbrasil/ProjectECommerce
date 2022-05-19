@@ -1,0 +1,39 @@
+.checkbox {
+    display: none;
+    position: absolute;
+}
+
+.label {
+    background-color: var(--grey-100);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1);
+}
+
+
+.label .ball {
+    background-color: var(--grey-0-bg);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: var(--ball-transition);
+    transition: transform 0.2s linear;
+}
+
+.fa-moon {
+    color: #37268C;
+}
+
+.fa-sun {
+    color: #f39c12;
+}

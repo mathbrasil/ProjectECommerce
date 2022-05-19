@@ -1,0 +1,98 @@
+main {
+    margin: 52px 115px;
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.itemCard {
+    width: 296px;
+    height: 408px;
+    border: 2px solid var(--grey-0-border);
+}
+
+.image__container {
+    height: 154px;
+    background-color: var(--grey-0-bg);
+    transition: 0.2s linear;
+}
+
+.card__img {
+    margin: 9px 52.19px 5px 52px;
+}
+
+.description__container {
+    margin: 20px 12px 20px 15px;
+}
+
+.item__tag {
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 12px;
+    width: 70px;
+    height: 24px;
+    padding: 4px;
+    margin-bottom: 15px;
+    background-color: var(--color-primary-bg);
+    transition: 0.2s linear;
+}
+
+.item__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--grey-100);
+    margin-bottom: 15px;
+}
+
+.item__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grey-100);
+    margin-bottom: 17px;
+}
+
+.item__price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: var(--color-primary-text);
+}
+
+.item__add {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--grey-100);
+    cursor: pointer;
+}
+
+.itemCard:hover {
+    border: 2px solid var(--color-secondary);
+    transition: 0.2s linear;
+}
+
+.item__add:hover {
+    text-decoration-line: underline;
+    color: var(--color-primary-text);
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        margin: 30px 0;
+        display: block;
+    }
+    
+    .showcase {
+        gap: 32px;
+        justify-content: center;
+    }
+}

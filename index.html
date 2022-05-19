@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/showcase.css">
+    <link rel="stylesheet" href="./css/shoppingCart.css">
+    <link rel="stylesheet" href="./css/darkMode.css">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script defer src="./js/index.js"></script>
+    <script src="./js/database.js"></script>
+    
+    <title>Weartake</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Weartake</h1>
+            <div class="nav__menu-dark">
+                <div class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </div>
+                <ul id="nav__menu">
+                    <li class="menu__option all option--selected">Todos</li>
+                    <li class="menu__option accessories">Acessórios</li>
+                    <li class="menu__option shoes">Calçados</li>
+                    <li class="menu__option tshirts">Camisetas</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ul class="showcase">
+                
+            </ul>
+        </section>
+        <section class="search__cart">
+            <div class="search">
+                <input type="text" placeholder="Pesquisar item ou preço">
+                <button class="search__button">Pesquisar</button>
+            </div>
+            <div class="cart">
+                <h3 class="cart__title">Carrinho de compras</h3>
+                <ul class="cart__list">
+                </ul>
+                <ul class="total__cart">
+                    <li class="total__description">
+                        <p>Quantidade:</p>
+                        <p class="items__quantity"></p>
+                    </li>
+                    <li class="total__description total__price">
+                        <p>Total:</p>
+                        <p class="items__value"></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="mobile__cart">
+            <span><img class="mobile__cart_icon" src="./assets/cart-shopping-solid.svg" alt=""></span>
+        </div>
+    </main>
+</body>
+
+</html>
