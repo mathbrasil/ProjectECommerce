@@ -96,7 +96,7 @@ input.addEventListener('change', function (event) {
     const inputL = input.value.toLocaleLowerCase()
     for (let i = 0; i < data.length; i++) {
         if (data[i].nameItem.toLowerCase().includes(inputL) 
-        || data[i].tag.toLowerCase().includes(inputL) 
+        || data[i].tag.join().toLowerCase().includes(inputL) 
         || data[i].description.toLowerCase().includes(inputL) 
         || data[i].value == Number(inputL)) {
             createCard(i)
